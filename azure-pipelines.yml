@@ -8,7 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-
+  
+variables:
+  System.Debug: true
 steps:
 - task: Application security testing@2022
   inputs:
